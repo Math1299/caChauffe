@@ -17,22 +17,31 @@
     <title>Attention ça chauffe</title>
   </head>
   <body>
+    <!-- PUCE -->
+
+    <div class="puce_slide">
+      <a href="#bloc1" class="active"></a>
+      <a href="#bloc2"></a>
+      <a href="#bloc3"></a>
+      <a href="#bloc4"></a>
+    </div>
+
     <!-- section 1 -->
-    <div class="bloc1">
+    <div class="bloc1" id="bloc1">
       <header>
         <div class="sectionHeader">
           <img src="ressources/logo.png" alt="ours polaire" class="logo" />
           <div class="choix">
             <ul>
-              <li><a href="#">Accueil</a></li>
+              <li><a href="#bloc1">Accueil</a></li>
               <li><a href="#bloc2">Notre mission</a></li>
               <li><a href="#bloc3">A propos</a></li>
-              <li><a href="#">Faire un don</a></li>
+              <li><a href="#bloc4">Faire un don</a></li>
             </ul>
           </div>
         </div>
       </header>
-      <section class="section1">
+      <section class="section section1">
         <img src="ressources/13.png" alt="fond sup droit" class="fondLarge" />
         <div class="section1_title">
           <h1>Réchauffement<br />climatique</h1>
@@ -45,12 +54,12 @@
     </div>
     <!-- transition -->
 
-    <div class="transition">
+    <div class="transition transition1">
       <img src="ressources/10.png" alt="iceberg entre section1 et section2" />
     </div>
     <!-- section 2 -->
     <div class="bloc2" id="bloc2">
-      <section class="section2">
+      <section class="section section2">
         <div class="section2_title">
           <h1>Notre mission...</h1>
         </div>
@@ -98,7 +107,7 @@
     </div>
     <!-- section 3 -->
     <div class="bloc3" id="bloc3">
-      <section class="section3">
+      <section class="section section3">
         <div class="sect3 section3_top">
           <div class="left">
             <h2>Des espèces en voie de disparition</h2>
@@ -127,5 +136,43 @@
         </div>
       </section>
     </div>
+    <!-- transition 2 -->
+
+    <div class="transition transition2">
+      <img src="ressources/10.png" alt="iceberg entre section1 et section2" />
+    </div>
+    <!-- section 4 -->
+    <div class="bloc4" id="bloc4">
+      <section class="section section4">
+        <div class="box box_left">
+          <img src="ressources/5.png" alt="ours polaire de nuit" />
+        </div>
+        <div class="box box_mid">
+          <h1>Pour chaque don</h1>
+          <h2>1M<sup>3</sup> de banquise sauvé</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+            corrupti tempora incidunt laboriosam atque optio. Lorem ipsum dolor
+            sit amet, consectetur adipisicing elit. Provident, maxime!
+          </p>
+        </div>
+        <div class="box box_right">
+          <img src="ressources/8.png" alt="ours polaire de nuit" />
+        </div>
+      </section>
+    </div>
+    <script src="app.js"></script>
+    JQUERY
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.js"
+      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+      crossorigin="anonymous"
+    ></script>
+    JS
+    <script type="text/javascript">
+      $(document).on("click", ".puce_slide a", function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      });
+    </script>
   </body>
 </html>
