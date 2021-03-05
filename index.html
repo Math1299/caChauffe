@@ -20,10 +20,10 @@
     <!-- PUCE -->
 
     <div class="puce_slide">
-      <a href="#bloc1" class="active"></a>
-      <a href="#bloc2"></a>
-      <a href="#bloc3"></a>
-      <a href="#bloc4"></a>
+      <a href="#bloc1" class="puce active"></a>
+      <a href="#bloc2" class="puce"></a>
+      <a href="#bloc3" class="puce"></a>
+      <a href="#bloc4" class="puce"></a>
     </div>
 
     <!-- section 1 -->
@@ -162,17 +162,5 @@
       </section>
     </div>
     <script src="app.js"></script>
-    <!-- JQUERY -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
-    <!-- JS -->
-    <script type="text/javascript">
-      $(document).on("click", ".puce_slide a", function () {
-        $(this).addClass("active").siblings().removeClass("active");
-      });
-    </script>
   </body>
 </html>
